@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -13,8 +13,8 @@ export default function Hero() {
         >
           Welcome to
         </motion.div>
-        
-        <motion.h1 
+
+        <motion.h1
           className="hero-title"
           initial={{ y: 150, opacity: 0, letterSpacing: "0.5em", marginRight: "-0.5em" }}
           animate={{ y: 0, opacity: 1, letterSpacing: "-0.04em", marginRight: "0.04em" }}
@@ -23,10 +23,10 @@ export default function Hero() {
           The Cannon Lab.
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           className="hero-subtitle"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
           Occidental College Chemistry & Biochemistry
