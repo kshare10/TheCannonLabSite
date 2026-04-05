@@ -9,6 +9,7 @@ export default function Jeff() {
             <h1 style={{ fontSize: '6rem', marginBottom: '1rem' }}>Jeff Cannon</h1>
             <p style={{ fontSize: '2rem', color: 'var(--accent-color)', fontWeight: 600, fontFamily: 'var(--font-display)' }}>Associate Professor of Chemistry</p>
             <p style={{ fontSize: '1.6rem', color: 'var(--text-secondary)', fontWeight: 500, fontFamily: 'var(--font-display)' }}>Biochemistry Advisory Committee</p>
+            <p style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', fontWeight: 400, fontFamily: 'var(--font-display)', marginTop: '0.5rem' }}>Occidental College</p>
           </div>
         </FadeIn>
         <FadeIn delay={0.1}>

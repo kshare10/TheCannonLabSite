@@ -62,7 +62,7 @@ export default function Group() {
         </div>
 
         <FadeIn delay={0.3}>
-          <div style={{ marginTop: '4rem', padding: '4rem 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+          <div style={{ marginTop: '4rem', padding: '4rem 0', borderTop: '1px solid rgba(0, 229, 255, 0.15)' }}>
             <h2 style={{ fontSize: '3rem', marginBottom: '3rem', textAlign: 'center' }}>Alumni</h2>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '2rem' }}>
