@@ -1,11 +1,16 @@
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
 import groupData from '../data/members.json';
 
 export default function Group() {
-  const { groupPhotoUrl, season, members, alumni } = groupData;
+  const { groupPhotoUrl, season, members, alumni, seoTitle, seoDescription } = groupData;
 
   return (
-    <div className="container py-4">
+    <section className="container py-4">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+      </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '2rem', textAlign: 'center' }}>The Group</h1>
       </FadeIn>
@@ -41,9 +46,14 @@ export default function Group() {
             <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '3rem', textAlign: 'center' }}>Alumni</h2>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 250px), 1fr))', gap: '2rem' }}>
-              {alumni.map((alum, i) => (
+              {alumni.map((alum: any, i) => (
                 <div key={i} style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px' }}>
-                  {alum}
+                  {typeof alum === 'string' ? alum : (
+                    <>
+                      <div style={{ color: 'var(--text-color)' }}>{alum.name}</div>
+                      {alum.description && <div style={{ fontSize: '1rem', marginTop: '0.4rem' }}>{alum.description}</div>}
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -52,6 +62,6 @@ export default function Group() {
         </FadeIn>
 
       </div>
-    </div>
+    </section>
   );
 }

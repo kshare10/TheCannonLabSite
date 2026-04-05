@@ -1,4 +1,5 @@
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
 import coursesData from '../data/courses.json';
 
 interface Course {
@@ -8,11 +9,16 @@ interface Course {
   note: string | null;
 }
 
-const courses: Course[] = coursesData;
+const courses: Course[] = coursesData.courses || [];
 
 export default function Courses() {
+  const { seoTitle, seoDescription } = coursesData;
   return (
-    <div className="container py-4">
+    <section className="container py-4">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+      </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', marginBottom: '8rem' }}>Courses</h1>
       </FadeIn>
@@ -42,6 +48,6 @@ export default function Courses() {
           </FadeIn>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

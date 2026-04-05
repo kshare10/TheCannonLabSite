@@ -1,0 +1,30 @@
+{
+  "navbar": {
+    "siteTitle": "The Cannon Lab",
+    "links": [
+      { "name": "Research", "path": "/research" },
+      { "name": "The Group", "path": "/the-group" },
+      { "name": "Jeff", "path": "/jeff" },
+      { "name": "Publications", "path": "/publications" },
+      { "name": "Courses", "path": "/courses" }
+    ]
+  },
+  "footer": {
+    "title": "The Cannon Lab",
+    "subtitle": "Occidental College Chemistry & Biochemistry",
+    "contactLabel": "Contact Information",
+    "addressLines": "Norris Hall of Chemistry\nLos Angeles, CA 90041",
+    "mapUrl": "https://maps.app.goo.gl/yCccBdMZ1Ymegh9a8",
+    "email": "jcannon@oxy.edu"
+  },
+  "hero": {
+    "accentTag": "Welcome to",
+    "titlePart1": "The Cannon",
+    "titlePart2": "Lab.",
+    "subtitle": "Occidental College Chemistry & Biochemistry"
+  },
+  "seo": {
+    "homeTitle": "The Cannon Lab | Home",
+    "homeDescription": "The Cannon Lab at Occidental College develops new methods for stereoselective and catalytic carbon-carbon bond formation."
+  }
+}

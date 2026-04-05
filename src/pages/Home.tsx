@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Hero from '../components/Hero';
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
+import globalData from '../data/global.json';
 import allPostsData from '../data/posts.json';
 import './Home.css';
 
@@ -14,18 +16,26 @@ interface Post {
   videoUrl?: string;
 }
 
-const posts: Post[] = allPostsData;
+const posts: Post[] = Array.isArray(allPostsData) ? allPostsData : (allPostsData as any).posts || [];
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(5);
+  const { homeTitle, homeDescription } = globalData.seo;
 
   const handleLoadMore = () => {
     setVisibleCount(prev => Math.min(prev + 5, posts.length));
   };
   return (
     <>
+      <Helmet>
+        <title>{homeTitle}</title>
+        <meta name="description" content={homeDescription} />
+        <meta property="og:title" content={homeTitle} />
+        <meta property="og:description" content={homeDescription} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Hero />
-      <div className="container py-4">
+      <section className="container py-4">
         
         <div className="posts-feed">
           {posts.slice(0, visibleCount).map((post, idx) => (
@@ -104,7 +114,7 @@ export default function Home() {
             </button>
           </div>
         )}
-      </div>
+      </section>
     </>
   );
 }

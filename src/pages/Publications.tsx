@@ -1,4 +1,5 @@
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
 import pubsData from '../data/publications.json';
 
 interface Author {
@@ -37,7 +38,7 @@ function PubEntry({ pub }: { pub: Publication }) {
       {', '}
       {pub.pages}
       {'. doi: '}
-      <a href={pub.doiUrl} target="_blank" rel="noreferrer">{pub.doi}</a>
+      <a href={pub.doiUrl} target="_blank" rel="noopener noreferrer">{pub.doi}</a>
     </>
   );
 }
@@ -46,8 +47,13 @@ const undergraduatePubs: Publication[] = pubsData.undergraduate;
 const graduatePubs: Publication[] = pubsData.graduate;
 
 export default function Publications() {
+  const { seoTitle, seoDescription } = pubsData;
   return (
-    <div className="container py-4">
+    <section className="container py-4">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+      </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '8rem' }}>Publications</h1>
       </FadeIn>
@@ -94,6 +100,6 @@ export default function Publications() {
         </FadeIn>
 
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
+import globalData from '../data/global.json';
 import './Hero.css';
 
 export default function Hero() {
+  const { accentTag, titlePart1, titlePart2, subtitle } = globalData.hero;
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -11,7 +13,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="accent-tag"
         >
-          Welcome to
+          {accentTag}
         </motion.div>
 
         <motion.h1
@@ -20,8 +22,8 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1, letterSpacing: "-0.04em", marginRight: "0.04em" }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <span className="hero-title-part">The Cannon</span>
-          <span className="hero-title-part">Lab.</span>
+          <span className="hero-title-part">{titlePart1}</span>
+          <span className="hero-title-part">{titlePart2}</span>
         </motion.h1>
 
         <motion.p
@@ -30,7 +32,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Occidental College Chemistry & Biochemistry
+          {subtitle}
         </motion.p>
       </div>
     </section>

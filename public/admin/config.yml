@@ -1,0 +1,197 @@
+backend:
+  name: github
+  repo: kshare10/TheCannonLabSite # IMPORTANT: Replace with your actual Github Repository string!
+  branch: main
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "global"
+    label: "Global Settings"
+    files:
+      - label: "Site Architecture"
+        name: "architecture"
+        file: "src/data/global.json"
+        format: "json"
+        fields:
+          - label: "Navbar Settings"
+            name: "navbar"
+            widget: "object"
+            fields:
+              - {label: "Site Title", name: "siteTitle", widget: "string"}
+              - label: "Navigation Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Path", name: "path", widget: "string"}
+          - label: "Footer Settings"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Contact Label", name: "contactLabel", widget: "string"}
+              - {label: "Address Lines", name: "addressLines", widget: "text"}
+              - {label: "Map URL", name: "mapUrl", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+          - label: "Hero Settings"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Accent Tag", name: "accentTag", widget: "string"}
+              - {label: "Title Part 1", name: "titlePart1", widget: "string"}
+              - {label: "Title Part 2", name: "titlePart2", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Home Base SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Home SEO Title", name: "homeTitle", widget: "string"}
+              - {label: "Home SEO Description", name: "homeDescription", widget: "text"}
+
+  - name: "pages"
+    label: "Pages & Data"
+    files:
+      - label: "Members Directory"
+        name: "members"
+        file: "src/data/members.json"
+        format: "json"
+        fields:
+          - {label: "SEO Block Title", name: "seoTitle", widget: "string"}
+          - {label: "SEO Block Description", name: "seoDescription", widget: "text"}
+          - {label: "Group Photo URL", name: "groupPhotoUrl", widget: "string"}
+          - {label: "Season", name: "season", widget: "string"}
+          - label: "Active Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Detail", name: "detail", widget: "string", required: false}
+          - label: "Alumni"
+            name: "alumni"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description/Notes", name: "description", widget: "string", required: false}
+
+      - label: "Jeff (Profile)"
+        name: "jeff"
+        file: "src/data/jeff.json"
+        format: "json"
+        fields:
+          - {label: "SEO Title", name: "seoTitle", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Photo URL", name: "photo", widget: "string"}
+          - {label: "Titles", name: "titles", widget: "list"}
+          - {label: "Institution", name: "institution", widget: "string"}
+          - {label: "Biosketch", name: "biosketch", widget: "text"}
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            fields:
+              - {label: "Institution", name: "institution", widget: "string"}
+              - {label: "Degree", name: "degree", widget: "string"}
+              - {label: "Advisor", name: "advisor", widget: "string", required: false}
+          - {label: "Honors", name: "honors", widget: "list"}
+          - {label: "CV URL", name: "cvUrl", widget: "string", required: false}
+
+      - label: "Courses"
+        name: "courses"
+        file: "src/data/courses.json"
+        format: "json"
+        fields:
+          - {label: "SEO Title", name: "seoTitle", widget: "string"}
+          - {label: "SEO Description", name: "seoDescription", widget: "text"}
+          - label: "Classes"
+            name: "courses"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Number", name: "number", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Note", name: "note", widget: "string", required: false}
+
+      - label: "Publications"
+        name: "publications"
+        file: "src/data/publications.json"
+        format: "json"
+        fields:
+          - {label: "SEO Title", name: "seoTitle", widget: "string"}
+          - {label: "SEO Description", name: "seoDescription", widget: "text"}
+          - label: "Undergraduate Papers"
+            name: "undergraduate"
+            widget: "list"
+            fields:
+              - label: "Authors"
+                name: "authors"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Underline (Is Undergrad?)", name: "underline", widget: "boolean", required: false}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Journal", name: "journal", widget: "string"}
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Volume", name: "volume", widget: "string", required: false}
+              - {label: "Pages", name: "pages", widget: "string", required: false}
+              - {label: "DOI Number", name: "doi", widget: "string", required: false}
+              - {label: "DOI Link", name: "doiUrl", widget: "string", required: false}
+          - label: "Graduate Papers"
+            name: "graduate"
+            widget: "list"
+            fields:
+              - label: "Authors"
+                name: "authors"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Underline", name: "underline", widget: "boolean", required: false}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Journal", name: "journal", widget: "string"}
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Volume", name: "volume", widget: "string", required: false}
+              - {label: "Pages", name: "pages", widget: "string", required: false}
+              - {label: "DOI Number", name: "doi", widget: "string", required: false}
+              - {label: "DOI Link", name: "doiUrl", widget: "string", required: false}
+
+      - label: "Research Areas"
+        name: "research"
+        file: "src/data/research.json"
+        format: "json"
+        fields:
+          - {label: "SEO Title", name: "seoTitle", widget: "string"}
+          - {label: "SEO Description", name: "seoDescription", widget: "text"}
+          - label: "Sections"
+            name: "research"
+            widget: "list"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Image URL", name: "image", widget: "string", required: false}
+              - label: "References"
+                name: "references"
+                widget: "list"
+                fields:
+                  - {label: "Text", name: "text", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+
+      - label: "News & Posts"
+        name: "posts"
+        file: "src/data/posts.json"
+        format: "json"
+        fields:
+          - label: "Posts Array"
+            name: "posts"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "string"}
+              - {label: "Author", name: "author", widget: "string", default: "cannonchem"}
+              - {label: "Content HTML", name: "contentHtml", widget: "markdown"}
+              - {label: "Featured Image", name: "image", widget: "string", required: false}
+              - {label: "Images Library", name: "images", widget: "list", required: false}
+              - {label: "Video URL", name: "videoUrl", widget: "string", required: false}

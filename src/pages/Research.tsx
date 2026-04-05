@@ -1,4 +1,5 @@
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
 import researchData from '../data/research.json';
 
 interface Reference {
@@ -13,11 +14,17 @@ interface ResearchSection {
   references: Reference[];
 }
 
-const sections: ResearchSection[] = researchData;
+const sections: ResearchSection[] = researchData.research || [];
 
 export default function Research() {
+  const { seoTitle, seoDescription } = researchData;
   return (
-    <div className="container py-4">
+    <section className="container py-4">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+      </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '4rem', textAlign: 'center' }}>Research Areas</h1>
       </FadeIn>
@@ -50,7 +57,7 @@ export default function Research() {
                   {section.references.map((ref, refIdx) => (
                     <span key={refIdx}>
                       {refIdx > 0 && ' and '}
-                      <a href={ref.url} target="_blank" rel="noreferrer">{ref.text}</a>
+                      <a href={ref.url} target="_blank" rel="noopener noreferrer">{ref.text}</a>
                     </span>
                   ))}.
                 </p>
@@ -67,6 +74,6 @@ export default function Research() {
           </FadeIn>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

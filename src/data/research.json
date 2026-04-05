@@ -1,4 +1,7 @@
-[
+{
+  "seoTitle": "Research Areas | The Cannon Lab",
+  "seoDescription": "Developing new methods for stereoselective and catalytic carbon-carbon bond formation.",
+  "research": [
   {
     "title": "Photoredox Dual-Catalysis for Umpolung C–C Bond Forming Reactions",
     "text": "With the ultimate goal of finding new catalytic reactivity for C–C bond forming umpolung reactions, we are investigating the combination of photoredox catalysts with base or acid co-catalysis. We have used this strategy to develop the reactivities of ketyl and 1,3-dicarbonyl radicals. These radical intermediates provide access to challenging bond forming processes from stable and readily available ketone or dicarbonyl starting materials. The resulting reactivity is more efficient and greener than the corresponding samarium(II) or manganese(III)-mediated reactions.",
@@ -33,4 +36,4 @@
       { "text": "Deardorff, D. R.; Niman, S. W.; Paulsen, M. I.; Sookezian, A.; Whalen, M. E.; Finlayson, C. J.; Frivold, C.; Brown, H. C.; Cannon, J. S. ACS Omega 2020, 5, 2005", "url": "http://dx.doi.org/10.1021/acsomega.9b03990" }
     ]
   }
-]
+]}

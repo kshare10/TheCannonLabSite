@@ -1,4 +1,7 @@
-[
+{
+  "seoTitle": "Courses | The Cannon Lab",
+  "seoDescription": "View chemistry courses taught at Occidental College currently spanning multiple core categories.",
+  "courses": [
   {
     "title": "Organic Chemistry I and II",
     "number": "Chem 220 and 221",
@@ -17,4 +20,4 @@
     "description": "Physical organic chemistry is the detailed study of organic reactions and their mechanisms. In this class, students are given the tools to create mechanistic hypotheses for organic processes and design experiments to support or disprove them. Students will be able to utilize frontier molecular orbital theory to make generalizations about reactivity. Students will also be exposed to density functional theory (DFT) as a method for studying the structure and reactivity of organic reactions.",
     "note": "Offered in Spring of odd-numbered years"
   }
-]
+]}

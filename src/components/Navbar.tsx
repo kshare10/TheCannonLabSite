@@ -1,18 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FlaskConical } from 'lucide-react';
+import globalData from '../data/global.json';
 import './Navbar.css';
 
 export default function Navbar() {
   const location = useLocation();
-
-  const links = [
-    { name: 'Research', path: '/research' },
-    { name: 'The Group', path: '/the-group' },
-    { name: 'Jeff', path: '/jeff' },
-    { name: 'Publications', path: '/publications' },
-    { name: 'Courses', path: '/courses' },
-  ];
+  const { siteTitle, links } = globalData.navbar;
 
   return (
     <motion.header 
@@ -24,7 +18,7 @@ export default function Navbar() {
       <nav className="navbar container">
         <Link to="/" className="navbar-logo">
           <FlaskConical size={28} className="logo-icon" />
-          <span>The Cannon Lab</span>
+          <span>{siteTitle}</span>
         </Link>
         <div className="navbar-links">
           {links.map((link) => (

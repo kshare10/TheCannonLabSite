@@ -1,11 +1,16 @@
 import FadeIn from '../components/FadeIn';
+import { Helmet } from 'react-helmet-async';
 import jeffData from '../data/jeff.json';
 
 export default function Jeff() {
-  const { name, photo, titles, institution, biosketch, education, honors, cvUrl } = jeffData;
+  const { name, photo, titles, institution, biosketch, education, honors, cvUrl, seoTitle } = jeffData;
 
   return (
-    <div className="container py-4">
+    <section className="container py-4">
+      <Helmet>
+        <title>{seoTitle}</title>
+        <meta name="description" content={biosketch.substring(0, 160) + '...'} />
+      </Helmet>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '6rem' }}>
         <FadeIn>
           <div style={{ flex: '1 1 min(100%, 400px)' }}>
@@ -80,6 +85,6 @@ export default function Jeff() {
           </div>
         </FadeIn>
       </div>
-    </div>
+    </section>
   );
 }
