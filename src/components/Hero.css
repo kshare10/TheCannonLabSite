@@ -28,13 +28,21 @@
 }
 
 .hero-title {
-  font-size: 7rem;
+  font-size: clamp(2.5rem, 10vw, 7rem);
   font-weight: 800;
   color: var(--text-color);
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 2rem;
-  white-space: nowrap;
   will-change: transform, opacity, letter-spacing;
+}
+
+.hero-title-part {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hero-title-part:first-child::after {
+  content: "\00a0";
 }
 
 .hero-subtitle {
@@ -46,6 +54,11 @@
 }
 
 @media (max-width: 768px) {
-  .hero-title { font-size: 4rem; }
-  .hero-subtitle { font-size: 1.2rem; }
+  .hero-title-part {
+    display: block;
+  }
+  .hero-title-part:first-child::after {
+    content: none;
+  }
+  .hero-subtitle { font-size: 1.3rem; }
 }

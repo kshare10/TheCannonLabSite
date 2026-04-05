@@ -16,11 +16,12 @@ export default function Hero() {
 
         <motion.h1
           className="hero-title"
-          initial={{ y: 150, opacity: 0, letterSpacing: "0.5em", marginRight: "-0.5em" }}
+          initial={{ y: 150, opacity: 0, letterSpacing: "0.2em", marginRight: "-0.2em" }}
           animate={{ y: 0, opacity: 1, letterSpacing: "-0.04em", marginRight: "0.04em" }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          The Cannon Lab.
+          <span className="hero-title-part">The Cannon</span>
+          <span className="hero-title-part">Lab.</span>
         </motion.h1>
 
         <motion.p
