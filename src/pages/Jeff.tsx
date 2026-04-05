@@ -8,8 +8,8 @@ export default function Jeff() {
     <div className="container py-4">
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '6rem' }}>
         <FadeIn>
-          <div style={{ flex: '1 1 400px' }}>
-            <h1 style={{ fontSize: '6rem', marginBottom: '1rem' }}>{name}</h1>
+          <div style={{ flex: '1 1 min(100%, 400px)' }}>
+            <h1 style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', marginBottom: '1rem' }}>{name}</h1>
             {titles.map((title, idx) => (
               <p key={idx} style={{ 
                 fontSize: idx === 0 ? '2rem' : '1.6rem', 
@@ -42,7 +42,7 @@ export default function Jeff() {
 
         <FadeIn delay={0.2}>
           <div>
-            <h2 style={{ fontSize: '3.5rem' }}>Biosketch</h2>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 3.5rem)' }}>Biosketch</h2>
             <p style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
               {biosketch}
             </p>
@@ -51,7 +51,7 @@ export default function Jeff() {
 
         <FadeIn delay={0.3}>
           <div style={{ marginTop: '4rem', paddingTop: '4rem', borderTop: '1px solid rgba(0, 229, 255, 0.15)' }}>
-            <h2 style={{ fontSize: '3.5rem' }}>Education</h2>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 3.5rem)' }}>Education</h2>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               {education.map((edu, idx) => (
                 <li key={idx}>
@@ -66,7 +66,7 @@ export default function Jeff() {
 
         <FadeIn delay={0.4}>
           <div style={{ marginTop: '4rem', paddingTop: '4rem', borderTop: '1px solid rgba(0, 229, 255, 0.15)' }}>
-            <h2 style={{ fontSize: '3.5rem' }}>Honors and Grants</h2>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 3.5rem)' }}>Honors and Grants</h2>
             <ul style={{ listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-secondary)', fontSize: '1.1rem' }}>
               {honors.map((honor, idx) => (
                 <li key={idx}>{honor}</li>

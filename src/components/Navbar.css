@@ -61,3 +61,19 @@
 .nav-link:hover::after, .nav-link.active::after {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

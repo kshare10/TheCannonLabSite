@@ -14,16 +14,16 @@ export default function Courses() {
   return (
     <div className="container py-4">
       <FadeIn>
-        <h1 style={{ fontSize: '6rem', marginBottom: '8rem' }}>Courses</h1>
+        <h1 style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', marginBottom: '8rem' }}>Courses</h1>
       </FadeIn>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem', maxWidth: '1000px' }}>
         {courses.map((course, idx) => (
-          <FadeIn key={idx} delay={0.1} direction="none">
+          <FadeIn key={idx} delay={0.1 * (idx + 1)}>
             <div style={{ display: 'flex', flexDirection: 'column', marginTop: idx !== 0 ? '4rem' : '0', paddingTop: idx !== 0 ? '4rem' : '0', borderTop: idx !== 0 ? '1px solid rgba(0, 229, 255, 0.15)' : 'none' }}>
               
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '2rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '3rem', margin: 0 }}>{course.title}</h2>
+                <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', margin: 0 }}>{course.title}</h2>
                 <span style={{ color: 'var(--accent-color)', fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 600 }}>
                   {course.number}
                 </span>

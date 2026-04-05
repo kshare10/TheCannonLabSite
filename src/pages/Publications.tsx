@@ -49,14 +49,14 @@ export default function Publications() {
   return (
     <div className="container py-4">
       <FadeIn>
-        <h1 style={{ fontSize: '5rem', marginBottom: '8rem' }}>Publications</h1>
+        <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '8rem' }}>Publications</h1>
       </FadeIn>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem', maxWidth: '1200px' }}>
         
         <FadeIn delay={0.1}>
           <div>
-            <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Occidental College</h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1rem' }}>Occidental College</h2>
             <p style={{ color: 'var(--accent-color)', marginBottom: '3rem', fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>Undergraduate co-authors are integral to our research</p>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingLeft: '0', listStyle: 'none' }}>
               {undergraduatePubs.map((pub, idx) => (
@@ -76,7 +76,7 @@ export default function Publications() {
 
         <FadeIn delay={0.2}>
           <div>
-            <h2 style={{ fontSize: '3rem', marginBottom: '3rem' }}>Graduate and Postdoctoral</h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '3rem' }}>Graduate and Postdoctoral</h2>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingLeft: '0', listStyle: 'none' }}>
               {graduatePubs.map((pub, idx) => (
                 <li key={idx} style={{ 

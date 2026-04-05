@@ -19,7 +19,7 @@ export default function Research() {
   return (
     <div className="container py-4">
       <FadeIn>
-        <h1 style={{ fontSize: '5rem', marginBottom: '4rem', textAlign: 'center' }}>Research Areas</h1>
+        <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '4rem', textAlign: 'center' }}>Research Areas</h1>
       </FadeIn>
       <FadeIn delay={0.2}>
         <p style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', textAlign: 'center', maxWidth: '800px', margin: '0 auto 6rem auto', lineHeight: '1.6' }}>
@@ -40,8 +40,8 @@ export default function Research() {
               paddingTop: idx !== 0 ? '4rem' : '0',
               borderTop: idx !== 0 ? '1px solid rgba(0, 229, 255, 0.15)' : 'none'
             }}>
-              <div style={{ flex: '1 1 500px' }}>
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>{section.title}</h2>
+              <div style={{ flex: '1 1 min(100%, 500px)' }}>
+                <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>{section.title}</h2>
                 <p style={{ fontSize: '1.3rem', color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
                   {section.text}
                 </p>
@@ -56,7 +56,7 @@ export default function Research() {
                 </p>
               </div>
               {section.image && (
-                <div style={{ flex: '0 1 400px' }}>
+                <div style={{ flex: '1 1 min(100%, 400px)' }}>
                   <div className="figure-soft-wrapper">
                     <img src={section.image} alt={section.title} className="rounded-image" style={{ width: '100%' }} />
                     <div className="figure-soft-overlay"></div>
