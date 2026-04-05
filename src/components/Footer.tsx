@@ -14,6 +14,7 @@ export default function Footer() {
             Norris Hall of Chemistry<br />
             Los Angeles, CA 90041
           </a>
+          <p style={{ marginTop: '0.5rem' }}>jcannon@oxy.edu</p>
         </div>
       </div>
     </footer>

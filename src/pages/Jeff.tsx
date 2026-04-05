@@ -5,23 +5,31 @@ export default function Jeff() {
     <div className="container py-4">
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '6rem' }}>
         <FadeIn>
-          <img 
-            src="https://i0.wp.com/cannonchem.com/wp-content/uploads/2022/02/2021-1026_faculty-jeffcannon-33.jpg" 
-            alt="Prof. Jeff Cannon" 
-            className="rounded-image"
-            style={{ width: '300px', height: '300px', objectFit: 'cover', borderRadius: '50%' }}
-          />
+          <div style={{ flex: '1 1 400px' }}>
+            <h1 style={{ fontSize: '6rem', marginBottom: '1rem' }}>Jeff Cannon</h1>
+            <p style={{ fontSize: '2rem', color: 'var(--accent-color)', fontWeight: 600, fontFamily: 'var(--font-display)' }}>Associate Professor of Chemistry</p>
+            <p style={{ fontSize: '1.6rem', color: 'var(--text-secondary)', fontWeight: 500, fontFamily: 'var(--font-display)' }}>Biochemistry Advisory Committee</p>
+          </div>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <h1 style={{ fontSize: '6rem', marginBottom: '1rem' }}>Jeff Cannon</h1>
-          <p style={{ fontSize: '2rem', color: 'var(--accent-color)', fontWeight: 600, fontFamily: 'var(--font-display)' }}>Associate Professor of Chemistry</p>
+          <div style={{
+            width: '300px', height: '300px', borderRadius: '50%', overflow: 'hidden',
+            maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%)',
+            WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%)'
+          }}>
+            <img
+              src="https://i0.wp.com/cannonchem.com/wp-content/uploads/2022/02/2021-1026_faculty-jeffcannon-33.jpg"
+              alt="Prof. Jeff Cannon"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
+            />
+          </div>
         </FadeIn>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem', maxWidth: '1000px' }}>
 
         <FadeIn delay={0.2}>
-          <div style={{ paddingBottom: '5rem', borderBottom: '1px solid rgba(0, 229, 255, 0.15)' }}>
+          <div>
             <h2 style={{ fontSize: '3.5rem' }}>Biosketch</h2>
             <p style={{ fontSize: '1.5rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
               Jeff graduated from Occidental College magna cum laude with honors where he worked with Prof. Donald Deardorff. He then moved to UC Irvine where he worked with Prof. Larry Overman on catalysis and total synthesis projects to earn his Ph.D. in 2012. After two years as an NIH postdoctoral fellow in the laboratory of Nobel laureate Prof. Robert Grubbs, Jeff returned to his alma mater as a professor specializing in organic chemistry. Jeff teaches introductory organic chemistry as well as advanced classes in organic synthesis and physical organic chemistry. His research interests are centered around new methods for the stereoselective formation of carbon-carbon bonds. Outside of lab, Jeff enjoys long-distance cycling.
@@ -30,7 +38,7 @@ export default function Jeff() {
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <div style={{ paddingBottom: '5rem', borderBottom: '1px solid rgba(0, 229, 255, 0.15)' }}>
+          <div style={{ marginTop: '4rem', paddingTop: '4rem', borderTop: '1px solid rgba(0, 229, 255, 0.15)' }}>
             <h2 style={{ fontSize: '3.5rem' }}>Education</h2>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               <li>
@@ -53,7 +61,7 @@ export default function Jeff() {
         </FadeIn>
 
         <FadeIn delay={0.4}>
-          <div>
+          <div style={{ marginTop: '4rem', paddingTop: '4rem', borderTop: '1px solid rgba(0, 229, 255, 0.15)' }}>
             <h2 style={{ fontSize: '3.5rem' }}>Honors and Grants</h2>
             <ul style={{ listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-secondary)', fontSize: '1.1rem' }}>
               <li>National Institutes of Health R15 Grant, 2024</li>

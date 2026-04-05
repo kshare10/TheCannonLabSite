@@ -29,7 +29,7 @@ export default function Courses() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem', maxWidth: '1000px' }}>
         {courses.map((course, idx) => (
           <FadeIn key={idx} delay={0.1} direction="none">
-            <div style={{ display: 'flex', flexDirection: 'column', paddingBottom: '4rem', borderBottom: '1px solid rgba(0, 229, 255, 0.15)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', marginTop: idx !== 0 ? '4rem' : '0', paddingTop: idx !== 0 ? '4rem' : '0', borderTop: idx !== 0 ? '1px solid rgba(0, 229, 255, 0.15)' : 'none' }}>
               
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '2rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
                 <h2 style={{ fontSize: '3rem', margin: 0 }}>{course.title}</h2>
