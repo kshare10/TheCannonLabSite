@@ -1,0 +1,47 @@
+{
+  "name": "Jeff Cannon",
+  "photo": "https://i0.wp.com/cannonchem.com/wp-content/uploads/2022/02/2021-1026_faculty-jeffcannon-33.jpg",
+  "titles": [
+    "Associate Professor of Chemistry",
+    "Biochemistry Advisory Committee"
+  ],
+  "institution": "Occidental College",
+  "biosketch": "Jeff graduated from Occidental College magna cum laude with honors where he worked with Prof. Donald Deardorff. He then moved to UC Irvine where he worked with Prof. Larry Overman on catalysis and total synthesis projects to earn his Ph.D. in 2012. After two years as an NIH postdoctoral fellow in the laboratory of Nobel laureate Prof. Robert Grubbs, Jeff returned to his alma mater as a professor specializing in organic chemistry. Jeff teaches introductory organic chemistry as well as advanced classes in organic synthesis and physical organic chemistry. His research interests are centered around new methods for the stereoselective formation of carbon-carbon bonds. Outside of lab, Jeff enjoys long-distance cycling.",
+  "education": [
+    {
+      "institution": "California Institute of Technology",
+      "degree": "NIH Postdoctoral Scholar 2012–2014",
+      "advisor": "Robert H. Grubbs"
+    },
+    {
+      "institution": "University of California, Irvine",
+      "degree": "Ph.D. in Chemistry (2007–2012)",
+      "advisor": "Larry E. Overman"
+    },
+    {
+      "institution": "Occidental College",
+      "degree": "B.A. in Chemistry (2003–2007)",
+      "advisor": "Donald R. Deardorff"
+    }
+  ],
+  "honors": [
+    "National Institutes of Health R15 Grant, 2024",
+    "Organic Syntheses Research Grant for Faculty at a PUI, 2024",
+    "Henry Dreyfus Teacher-Scholar Award, 2022",
+    "National Institutes of Health R15 Grant, 2020",
+    "National Science Foundation Major Research Instrumentation Grant for a 400 MHz NMR Spectrometer (PI), 2020",
+    "Organic Syntheses Research Grant for Faculty at a PUI, 2020",
+    "National Science Foundation Major Research Instrumentation Grant for a high-performance computing cluster (co-PI), 2019",
+    "National Science Foundation Research at Undergraduate Institutions Grant, 2019",
+    "Occidental College Faculty Enrichment Grant, 2018",
+    "ACS Petroleum Research Fund Undergraduate New Investigator Grant, 2016",
+    "NIH Ruth L. Kirschstein NRSA Postdoctoral Fellowship, 2012-2014",
+    "Bristol-Myers Squibb Minority Chemist Fellowship, 2010",
+    "NSF Graduate Research Fellowship; Honorable Mention, 2008",
+    "UC Irvine Dissertation Fellowship, 2012",
+    "UC Irvine Chancellor's Fellowship, 2007",
+    "Barry M. Goldwater Scholar, 2006",
+    "Pfizer Summer Research Fellow, 2006"
+  ],
+  "cvUrl": "https://cannonchem.com/wp-content/uploads/2024/08/cannon-cv.pdf"
+}

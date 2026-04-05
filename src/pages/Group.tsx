@@ -1,33 +1,8 @@
 import FadeIn from '../components/FadeIn';
+import groupData from '../data/members.json';
 
 export default function Group() {
-  const members = [
-    { name: "Rachel Schachter", title: "Research Associate", detail: "A.B. Occidental College" },
-    { name: "Allison Bello ’26", title: "Undergraduate", detail: "Biochemistry" },
-    { name: "Oakley Cook ’27", title: "Undergraduate", detail: "Biochemistry" },
-    { name: "Madeline Fernandez ’28", title: "Undergraduate", detail: "" },
-    { name: "Ben Rachel Gross ’27", title: "Undergraduate", detail: "Chemistry" },
-    { name: "Ixchel Hernandez ’27", title: "Undergraduate", detail: "Urban & Environmental Policy" },
-    { name: "Kenneth Huang ’26", title: "Undergraduate", detail: "Chemistry" },
-    { name: "Nathan Kim ’26", title: "Undergraduate", detail: "Biology" },
-    { name: "Sua Kim ’28", title: "Undergraduate", detail: "" },
-    { name: "Kyle Share ’27", title: "Undergraduate", detail: "Biochemistry and Kinesiology" },
-    { name: "Ian Terell ’26", title: "Undergraduate", detail: "Chemistry and CSLC" },
-    { name: "Ozan Topalan ’27", title: "Undergraduate", detail: "Biochemistry" },
-    { name: "Jack Yurich ’28", title: "Undergraduate", detail: "" }
-  ];
-  const alumni = [
-    "Morgan Jackson ’25", "Haeyoon Kim ’25", "Songhee Lee ’25", "Carter Park ’25", 
-    "Zane Blum ’24", "Chris Boeke ’24", "Ciara Gillen ’24", "Kiana Kea ’24", "Allison Shao ’24",
-    "Lucien Delgutte ’23", "Chris George ’23", "Gahan Lahiri ’23", "Kayla Lin ’23", "Rachel Zhang ’23",
-    "Greg Evans ’22", "Clarissa Kiyomura ’22", "Claire Luethe ’22", "Kian Shamskhou ’22", "Max Young ’22",
-    "Aerin Mellott ’21", "Alex Orebic ’21", "Sophia Yang ’21",
-    "Kiersten Gabaldon ’20", "Marc Kawada ’20", "Yuri Lee ’20", "Kayla Steinke ’20",
-    "Joseph Costello ’19", "Anne Marie Crooke ’19", "Daniel Essayan ’19", "Tre’Shunda James ’19", "Paul Tomlinson ’19",
-    "Santiago Bedoya-Gallego ’18", "Molly Brown ’18", "Katherine Forbes ’18", "Scott Niman ’18", "Matthew Schmidt ’18", "Tina Zolfaghari ’18",
-    "Natalie Dwulet ’17", "Nicholas Foy ’17", "Benjamin Sartor ’17", "Trent Benedick ’17", "Max Gruber ’17", "Brad Kawano ’17", "Isaac Wang ’17",
-    "Jacob Sertich ’16", "Alex Rand ’15"
-  ];
+  const { groupPhotoUrl, season, members, alumni } = groupData;
 
   return (
     <div className="container py-4">
@@ -40,12 +15,12 @@ export default function Group() {
         <FadeIn delay={0.2}>
           <div style={{ textAlign: 'center' }}>
             <img 
-              src="https://i0.wp.com/cannonchem.com/wp-content/uploads/2025/09/img_5452-edited.jpg?resize=1040%2C1040&ssl=1" 
-              alt="Cannon Lab Group Summer 2025" 
+              src={groupPhotoUrl} 
+              alt={`Cannon Lab Group ${season}`} 
               className="rounded-image"
               style={{ width: '100%', maxHeight: '700px', objectFit: 'cover', objectPosition: 'center 20%' }}
             />
-            <p style={{ marginTop: '2rem', fontSize: '1.5rem', color: 'var(--accent-color)', fontWeight: 600, fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '2px' }}>Summer 2025</p>
+            <p style={{ marginTop: '2rem', fontSize: '1.5rem', color: 'var(--accent-color)', fontWeight: 600, fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '2px' }}>{season}</p>
           </div>
         </FadeIn>
 

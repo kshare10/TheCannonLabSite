@@ -1,25 +1,16 @@
 import FadeIn from '../components/FadeIn';
+import coursesData from '../data/courses.json';
+
+interface Course {
+  title: string;
+  number: string;
+  description: string;
+  note: string | null;
+}
+
+const courses: Course[] = coursesData;
 
 export default function Courses() {
-  const courses = [
-    {
-      title: "Organic Chemistry I and II",
-      number: "Chem 220 and 221",
-      description: "Introductory organic chemistry is designed to give students the skills to understand the structure and interactions of covalently-bonded molecules containing carbon. Key topics include molecular structure, intermolecular interactions, reactivity, and synthesis. Special emphasis is placed on developing logical problem-solving skills around multi-step synthesis and electron motion in reaction mechanisms."
-    },
-    {
-      title: "Organic Chemistry Labs I and II",
-      number: "Chem 220L and 221L",
-      description: "Organic chemistry lab teaches the techniques and general reactions of organic chemistry. The first semester focuses on introducing proper techniques for conducting reactions, purifying products, and analyzing the structure and purity of these products. The second semester applies these techniques to the synthesis of several interesting organic molecules."
-    },
-    {
-      title: "Physical Organic Chemistry",
-      number: "Chem 360",
-      description: "Physical organic chemistry is the detailed study of organic reactions and their mechanisms. In this class, students are given the tools to create mechanistic hypotheses for organic processes and design experiments to support or disprove them. Students will be able to utilize frontier molecular orbital theory to make generalizations about reactivity. Students will also be exposed to density functional theory (DFT) as a method for studying the structure and reactivity of organic reactions.",
-      note: "Offered in Spring of odd-numbered years"
-    }
-  ];
-
   return (
     <div className="container py-4">
       <FadeIn>
