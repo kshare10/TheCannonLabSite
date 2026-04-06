@@ -10,6 +10,8 @@ export default function Jeff() {
       <Helmet>
         <title>{seoTitle}</title>
         <meta name="description" content={biosketch.substring(0, 160) + '...'} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={biosketch.substring(0, 160) + '...'} />
       </Helmet>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '6rem' }}>
         <FadeIn>

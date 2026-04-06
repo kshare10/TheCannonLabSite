@@ -53,6 +53,8 @@ export default function Publications() {
       <Helmet>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
       </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', marginBottom: '8rem' }}>Publications</h1>

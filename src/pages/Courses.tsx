@@ -18,6 +18,8 @@ export default function Courses() {
       <Helmet>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
       </Helmet>
       <FadeIn>
         <h1 style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', marginBottom: '8rem' }}>Courses</h1>

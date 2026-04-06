@@ -1,96 +1,69 @@
-# The Cannon Lab Website
+# Cannon Lab Website Modernization
 
-This is a modern, high-performance React website for The Cannon Lab at Occidental College.
+This repository contains the modernized, CMS-driven website for **The Cannon Lab at Occidental College**. It is built with **React + Vite** and integrated with **Decap CMS** for a a complete "No-Code" management experience.
 
-## 🚀 Getting Started
-
-To run the project locally, follow these steps:
-
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Start the Development Server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Open the Site**:
-   Navigate to `http://localhost:5173` in your browser.
+## 🚀 Speed & SEO Optimization
+The site is fully optimized for modern search engines:
+- **Dynamic Meta Management**: Every page uses `react-helmet-async` to inject custom titles and descriptions managed via the CMS.
+- **Social Media Previews**: Optimized OpenGraph tags ensure high-quality link previews on iMessage, Slack, Twitter, etc.
+- **Performance**: Built with Vite for lightning-fast loads and zero-latency navigation.
+- **SEO Ready**: Includes a dynamic `sitemap.xml` and `robots.txt` to guide search crawlers.
 
 ---
 
-## 📝 Managing Content
+## 🛠️ Setup Instructions for the Site Owner (Jeff)
 
-The website is designed so that all content can be managed by editing simple JSON files in the `src/data/` directory. **You do not need to edit any code to update the site's information.**
+Follow these steps to take ownership of the site and enable the administrative dashboard.
 
-### 1. Generating Home Page Posts
-**File**: [`src/data/posts.json`](file:///home/kyle/Documents/Cannon_Website/src/data/posts.json)
+### 1. Repository Setup
+1. **Fork or Copy**: Ensure this repository is under your own GitHub account (e.g., `jeffcannon/TheCannonLabSite`).
+2. **Connect to Vercel**: 
+   - Sign into [Vercel](https://vercel.com) with your GitHub account.
+   - Click **"Add New"** > **"Project"** and import this repository.
+   - Vercel will automatically detect the Vite settings. Click **"Deploy"**.
 
-To add a new post (news, updates, etc.) to the home feed:
-- Open `posts.json`.
-- Add a new object at the **top** of the array.
-- A post can have:
-  - `title`: The title of the post.
-  - `date`: The date formatted as "Month Day, Year".
-  - `author`: "cannonchem"
-  - `contentHtml`: The body text of the post. You can use standard HTML like `<em>`, `<strong>`, or `<a>`.
-  - `image` (Optional): A single URL for a featured image.
-  - `images` (Optional): A list of URLs for a gallery of images.
+### 2. Connect Your Domain (GoDaddy)
+1. In the Vercel Dashboard, go to **Settings > Domains**.
+2. Add `cannonchem.com`.
+3. Vercel will provide **A** and **CNAME** records.
+4. Log into **GoDaddy**, go to your DNS Management for `cannonchem.com`, and update the records to match what Vercel provided.
 
-### 2. Updating Research Areas
-**File**: [`src/data/research.json`](file:///home/kyle/Documents/Cannon_Website/src/data/research.json)
-
-To add or modify a research project:
-- Add an object to the list.
-- Each item has:
-  - `title`: The name of the project.
-  - `text`: A description of the research.
-  - `image`: URL for the ChemDraw or figure.
-  - `references`: A list of `{ "text": "Citation", "url": "DOI URL" }`. The site will automatically handle the "See:" formatting.
-
-### 3. Adding Group Members & Alumni
-**File**: [`src/data/members.json`](file:///home/kyle/Documents/Cannon_Website/src/data/members.json)
-
-- **Group Photo**: Update the `groupPhotoUrl` at the top of the file.
-- **Current Members**: Add a new object to the `members` array:
-  ```json
-  { "name": "Name 'Year", "title": "Undergraduate", "detail": "Major" }
-  ```
-- **Alumni**: Simply add the name string to the `alumni` array. The grid will self-organize.
-
-### 4. Adding New Publications
-**File**: [`src/data/publications.json`](file:///home/kyle/Documents/Cannon_Website/src/data/publications.json)
-
-The publications page automatically handles formatting for undergraduates (underlining) and DOI links. 
-
-To add a publication:
-- Identify if it's an **undergraduate** or **graduate** publication.
-- Add an entry to the corresponding list.
-- **Authors**: Create a list of objects like `{ "name": "Name", "underline": true }`. Set `underline` to `true` for Occidental undergraduates.
-- **Details**: Fill in the `title`, `journal`, `year`, `volume`, `pages`, `doi`, and `doiUrl`.
-
-### 5. Managing Jeff's Profile
-**File**: [`src/data/jeff.json`](file:///home/kyle/Documents/Cannon_Website/src/data/jeff.json)
-
-Use this file to update Jeff's biosketch, titles, education history, honors/grants, and the link to his CV.
+### 3. Enable the Admin Dashboard (/admin)
+To allow the CMS to save changes directly to your GitHub repository, you must create an OAuth App:
+1. Go to your **GitHub Settings** > **Developer Settings** > **OAuth Apps** > **New OAuth App**.
+2. **Application Name**: `Cannon Lab CMS`
+3. **Homepage URL**: `https://cannonchem.com`
+4. **Authorization callback URL**: `https://cannonchem.com/admin/`
+5. Click **Register**.
+6. Copy the **Client ID**.
+7. **Edit the Code**: Open `public/admin/config.yml` in this repo and update these lines:
+   ```yaml
+   backend:
+     name: github
+     repo: your-github-username/your-repo-name # e.g. jeffcannon/TheCannonLabSite
+     branch: main
+     auth_type: pkce
+     app_id: YOUR_CLIENT_ID_HERE # Paste your Client ID here
+   ```
+8. Commit and push the change.
 
 ---
 
-## 🛠️ Technical Details
+## 📝 How to Edit the Site
+Once the setup above is complete, you can manage the entire site without touching code:
+1. Navigate to **`https://cannonchem.com/admin`**.
+2. Click **"Login with GitHub"**.
+3. Use the sidebar to navigate through:
+   - **Global Settings**: Change the Navbar title, Hero text, or Footer contact info.
+   - **Members Directory**: Add/remove lab members and update alumni.
+   - **News & Posts**: Create new blog posts with images and videos.
+   - **Research/Publications/Courses**: Update all academic content.
+4. Click **"Publish"** to save changes. Vercel will automatically rebuild the site (takes ~30 seconds) and the changes will be live!
 
-### Development Commands
-- `npm run dev`: Starts the local dev server.
-- `npm run build`: Generates a production bundle in the `dist/` folder.
-- `npm run preview`: Previews the production build locally.
+---
 
-### Tech Stack
-- **Framework**: React 18
-- **Build Tool**: Vite
-- **Animations**: Framer Motion
-- **Styling**: Vanilla CSS (Global tokens in `src/index.css`)
-
-### Images & Assets
-- The site primarily uses absolute URLs for images (hosted via WordPress/Jetpack).
-- If you want to host an image locally, place it in `public/` and reference it starting with `/` (e.g., `/my-photo.jpg`).
+## 💻 Local Development
+If you need to run the site on your own machine:
+1. `npm install`
+2. `npm run dev` (Site runs at `localhost:5173`)
+3. `npx decap-server` (In a separate terminal to enable the Admin dashboard locally)
