@@ -11,7 +11,7 @@ interface Publication {
   authors: Author[];
   title: string;
   journal: string;
-  year: number;
+  year: string;
   volume: string;
   pages: string;
   doi: string;
