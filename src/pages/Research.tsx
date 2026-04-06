@@ -65,7 +65,7 @@ export default function Research() {
               {section.image && (
                 <div style={{ flex: '1 1 min(100%, 400px)' }}>
                   <div className="figure-soft-wrapper">
-                    <img src={section.image} alt={section.title} className="rounded-image" style={{ width: '100%' }} />
+                    <img src={section.image} alt={section.title} className="figure-soft-img" style={{ width: '100%' }} />
                     <div className="figure-soft-overlay"></div>
                   </div>
                 </div>
