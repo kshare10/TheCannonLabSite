@@ -4,15 +4,30 @@
   "undergraduate": [
     {
       "authors": [
-        { "name": "Chris Boeke", "underline": true },
-        { "name": "Aerin Mellott", "underline": true },
-        { "name": "Gahan Lahiri", "underline": true },
-        { "name": "Hin Yu Kenneth Huang", "underline": true },
-        { "name": "Jeffrey S. Cannon*", "underline": false }
+        {
+          "name": "Chris Boeke",
+          "underline": true
+        },
+        {
+          "name": "Aerin Mellott",
+          "underline": true
+        },
+        {
+          "name": "Gahan Lahiri",
+          "underline": true
+        },
+        {
+          "name": "Hin Yu Kenneth Huang",
+          "underline": true
+        },
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
       ],
       "title": "A Mild and Chemoselective Photoredox-Catalyzed Reduction of Aromatic Ketones",
       "journal": "Tetrahedron Lett.",
-      "year": 2024,
+      "year": "2024",
       "volume": "152",
       "pages": "ASAP",
       "doi": "10.1016/j.tetlet.2024.155334",
@@ -20,17 +35,38 @@
     },
     {
       "authors": [
-        { "name": "Katherine C. Forbes", "underline": true },
-        { "name": "Anne Marie Crooke", "underline": true },
-        { "name": "Yuri Lee", "underline": true },
-        { "name": "Masamu Kawada", "underline": true },
-        { "name": "Kian M. Shamskhou", "underline": true },
-        { "name": "Rachel A. Zhang", "underline": true },
-        { "name": "Jeffrey S. Cannon*", "underline": false }
+        {
+          "name": "Katherine C. Forbes",
+          "underline": true
+        },
+        {
+          "name": "Anne Marie Crooke",
+          "underline": true
+        },
+        {
+          "name": "Yuri Lee",
+          "underline": true
+        },
+        {
+          "name": "Masamu Kawada",
+          "underline": true
+        },
+        {
+          "name": "Kian M. Shamskhou",
+          "underline": true
+        },
+        {
+          "name": "Rachel A. Zhang",
+          "underline": true
+        },
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
       ],
       "title": "Photoredox-catalyzed Oxidation of Anions for the Atom-Economical Hydro-, Amido-, and Dialkylation of Alkenes",
       "journal": "J. Org. Chem.",
-      "year": 2022,
+      "year": "2022",
       "volume": "87",
       "pages": "3498",
       "doi": "10.1021/acs.joc.1c03055",
@@ -38,208 +74,369 @@
     },
     {
       "authors": [
-        { "name": "Donald R. Deardorff", "underline": false },
-        { "name": "Scott W. Niman", "underline": true },
-        { "name": "Mark I. Paulsen", "underline": true },
-        { "name": "Anasheh Sookezian", "underline": true },
-        { "name": "Meghan E. Whalen", "underline": true },
-        { "name": "Christopher J. Finlayson", "underline": true },
-        { "name": "Collrane Frivold", "underline": true },
-        { "name": "Hilary C. Brown", "underline": true },
-        { "name": "Jeffrey S. Cannon*", "underline": false }
+        {
+          "name": "Donald R. Deardorff",
+          "underline": false
+        },
+        {
+          "name": "Scott W. Niman",
+          "underline": true
+        },
+        {
+          "name": "Mark I. Paulsen",
+          "underline": true
+        },
+        {
+          "name": "Anasheh Sookezian",
+          "underline": true
+        },
+        {
+          "name": "Meghan E. Whalen",
+          "underline": true
+        },
+        {
+          "name": "Christopher J. Finlayson",
+          "underline": true
+        },
+        {
+          "name": "Collrane Frivold",
+          "underline": true
+        },
+        {
+          "name": "Hilary C. Brown",
+          "underline": true
+        },
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
       ],
-      "title": "Combined Enzyme- and Transition Metal-Catalyzed Strategy for the Enantioselective Syntheses of Nitrogen Heterocycles: (–)-Coniine, DAB-1, and Nectrisine",
+      "title": "Combined Enzyme- and Transition Metal-Catalyzed Strategy for the Enantioselective Syntheses of Nitrogen Heterocycles: (\u2013)-Coniine, DAB-1, and Nectrisine",
       "journal": "ACS Omega",
-      "year": 2020,
+      "year": "2020",
       "volume": "5",
-      "pages": "2005–2014",
+      "pages": "2005\u20132014",
       "doi": "10.1021/acsomega.9b03990",
       "doiUrl": "https://dx.doi.org/10.1021/acsomega.9b03990"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon*", "underline": false },
-        { "name": "Larry E. Overman*", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman*",
+          "underline": false
+        }
       ],
       "title": "Discussion Addendum for Preparation of the COP Catalysts: [(S)-COP-OAc]2, [(S)-COP-Cl]2, and (S)-COP-hfacac",
       "journal": "Org. Synth.",
-      "year": 2018,
+      "year": "2018",
       "volume": "95",
-      "pages": "500–511",
+      "pages": "500\u2013511",
       "doi": "10.15227/orgsyn.095.0500",
       "doiUrl": "http://dx.doi.org/10.15227/orgsyn.095.0500"
     },
     {
       "authors": [
-        { "name": "Natalie C. Dwulet", "underline": true },
-        { "name": "Tina A. Zolfaghari", "underline": true },
-        { "name": "Molly L. Brown", "underline": true },
-        { "name": "Jeffrey S. Cannon*", "underline": false }
+        {
+          "name": "Natalie C. Dwulet",
+          "underline": true
+        },
+        {
+          "name": "Tina A. Zolfaghari",
+          "underline": true
+        },
+        {
+          "name": "Molly L. Brown",
+          "underline": true
+        },
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
       ],
-      "title": "Diastereoselective Synthesis of Unnatural Amino Acids by Alkylation of α-tert-Butanesulfinamide Auxiliary-Bound Enolates",
+      "title": "Diastereoselective Synthesis of Unnatural Amino Acids by Alkylation of \u03b1-tert-Butanesulfinamide Auxiliary-Bound Enolates",
       "journal": "J. Org. Chem.",
-      "year": 2018,
+      "year": "2018",
       "volume": "83",
-      "pages": "11510–11518",
+      "pages": "11510\u201311518",
       "doi": "10.1021/acs.joc.8b01379",
       "doiUrl": "http://dx.doi.org/10.1021/acs.joc.8b01379"
     },
     {
       "authors": [
-        { "name": "Nicholas J. Foy", "underline": true },
-        { "name": "Katherine C. Forbes", "underline": true },
-        { "name": "Anne Marie Crooke", "underline": true },
-        { "name": "Maxwell D. Gruber", "underline": true },
-        { "name": "Jeffrey S. Cannon*", "underline": false }
+        {
+          "name": "Nicholas J. Foy",
+          "underline": true
+        },
+        {
+          "name": "Katherine C. Forbes",
+          "underline": true
+        },
+        {
+          "name": "Anne Marie Crooke",
+          "underline": true
+        },
+        {
+          "name": "Maxwell D. Gruber",
+          "underline": true
+        },
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
       ],
       "title": "Dual Lewis Acid/Photoredox-Catalyzed Addition of Ketyl Radicals to Vinylogous Carbonates in the Synthesis of 2,6-Dioxabicyclo[3.3.0]octan-3-ones",
       "journal": "Org. Lett.",
-      "year": 2018,
+      "year": "2018",
       "volume": "20",
-      "pages": "5727–5731",
+      "pages": "5727\u20135731",
       "doi": "10.1021/acs.orglett.8b02442",
       "doiUrl": "http://dx.doi.org/10.1021/acs.orglett.8b02442"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon*", "underline": false },
-        { "name": "Larry E. Overman*", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman*",
+          "underline": false
+        }
       ],
       "title": "Palladium(II)-Catalyzed Enantioselective Reactions Using COP Catalysts",
       "journal": "Acc. Chem. Res.",
-      "year": 2016,
+      "year": "2016",
       "volume": "49",
-      "pages": "2220–2231",
+      "pages": "2220\u20132231",
       "doi": "10.1021/acs.accounts.6b00398",
       "doiUrl": "http://dx.doi.org/10.1021/acs.accounts.6b00398"
     }
   ],
   "graduate": [
     {
-      "authors": [{ "name": "Jeffrey S. Cannon*", "underline": false }],
+      "authors": [
+        {
+          "name": "Jeffrey S. Cannon*",
+          "underline": false
+        }
+      ],
       "title": "A Nitrone Dipolar Cycloaddition Strategy toward an Enantioselective Synthesis of Massadine",
       "journal": "Org. Lett.",
-      "year": 2018,
+      "year": "2018",
       "volume": "20",
-      "pages": "3883–3887",
+      "pages": "3883\u20133887",
       "doi": "10.1021/acs.orglett.8b01464",
       "doiUrl": "http://dx.doi.org/10.1021/acs.orglett.8b01464"
     },
     {
       "authors": [
-        { "name": "Shao-Xiong Luo", "underline": false },
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Buck L. H. Taylor", "underline": false },
-        { "name": "Keary M. Engle", "underline": false },
-        { "name": "K. N. Houk", "underline": false },
-        { "name": "Robert H. Grubbs", "underline": false }
+        {
+          "name": "Shao-Xiong Luo",
+          "underline": false
+        },
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Buck L. H. Taylor",
+          "underline": false
+        },
+        {
+          "name": "Keary M. Engle",
+          "underline": false
+        },
+        {
+          "name": "K. N. Houk",
+          "underline": false
+        },
+        {
+          "name": "Robert H. Grubbs",
+          "underline": false
+        }
       ],
       "title": "Z-Selective Cross-Metathesis and Homodimerization of 3E-1,3-Dienes: Reaction Optimization, Computational Analysis, and Synthetic Applications",
       "journal": "J. Am. Chem. Soc.",
-      "year": 2016,
+      "year": "2016",
       "volume": "138",
-      "pages": "14039–14046",
+      "pages": "14039\u201314046",
       "doi": "10.1021/jacs.6b08387",
       "doiUrl": "http://dx.doi.org/10.1021/jacs.6b08387"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Lufeng Zou", "underline": false },
-        { "name": "Peng Liu", "underline": false },
-        { "name": "Yu Lan", "underline": false },
-        { "name": "Daniel J. O'Leary", "underline": false },
-        { "name": "K. N. Houk", "underline": false },
-        { "name": "Robert H. Grubbs", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Lufeng Zou",
+          "underline": false
+        },
+        {
+          "name": "Peng Liu",
+          "underline": false
+        },
+        {
+          "name": "Yu Lan",
+          "underline": false
+        },
+        {
+          "name": "Daniel J. O'Leary",
+          "underline": false
+        },
+        {
+          "name": "K. N. Houk",
+          "underline": false
+        },
+        {
+          "name": "Robert H. Grubbs",
+          "underline": false
+        }
       ],
-      "title": "Carboxylate-Assisted C(sp3)–H Activation in Olefin Metathesis-Relevant Ruthenium Complexes",
+      "title": "Carboxylate-Assisted C(sp3)\u2013H Activation in Olefin Metathesis-Relevant Ruthenium Complexes",
       "journal": "J. Am. Chem. Soc.",
-      "year": 2014,
+      "year": "2014",
       "volume": "136",
-      "pages": "6733–6743",
+      "pages": "6733\u20136743",
       "doi": "10.1021/ja5021958",
       "doiUrl": "http://dx.doi.org/10.1021/ja5021958"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Robert H. Grubbs", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Robert H. Grubbs",
+          "underline": false
+        }
       ],
-      "title": "Alkene Chemoselectivity in Ruthenium-Catalyzed Z‑Selective Olefin Metathesis",
+      "title": "Alkene Chemoselectivity in Ruthenium-Catalyzed Z\u2011Selective Olefin Metathesis",
       "journal": "Angew. Chem., Int. Ed.",
-      "year": 2013,
+      "year": "2013",
       "volume": "52",
-      "pages": "9001–9004",
+      "pages": "9001\u20139004",
       "doi": "10.1002/anie.201302724",
       "doiUrl": "http://dx.doi.org/10.1002/anie.201302724"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Angela C. Olson", "underline": false },
-        { "name": "Larry E. Overman", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Angela C. Olson",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman",
+          "underline": false
+        }
       ],
       "title": "Palladium(II)-Catalyzed Enantioselective Synthesis of 2-Vinyl Oxygen Heterocycles",
       "journal": "J. Org. Chem.",
-      "year": 2012,
+      "year": "2012",
       "volume": "77",
-      "pages": "1961–1973",
+      "pages": "1961\u20131973",
       "doi": "10.1021/jo202553a",
       "doiUrl": "http://dx.doi.org/10.1021/jo202553a"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "James H. Frederich", "underline": false },
-        { "name": "Larry E. Overman", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "James H. Frederich",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman",
+          "underline": false
+        }
       ],
       "title": "Palladacyclic Imidazoline-Naphthalene Complexes: Synthesis and Catalytic Performance in Pd(II)-Catalyzed Enantioselective Reactions of Allylic Trichloroacetimidates",
       "journal": "J. Org. Chem.",
-      "year": 2012,
+      "year": "2012",
       "volume": "77",
-      "pages": "1939–1951",
+      "pages": "1939\u20131951",
       "doi": "10.1021/jo2025724",
       "doiUrl": "http://dx.doi.org/10.1021/jo2025724"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Larry E. Overman", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman",
+          "underline": false
+        }
       ],
       "title": "Is There No End to the Total Syntheses of Strychnine? Lessons to be Learned for Strategy and Tactics in Total Synthesis",
       "journal": "Angew. Chem., Int. Ed.",
-      "year": 2012,
+      "year": "2012",
       "volume": "51",
-      "pages": "4288–4311",
+      "pages": "4288\u20134311",
       "doi": "10.1002/anie.201107385",
       "doiUrl": "http://dx.doi.org/10.1002/anie.201107385"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Stefan F. Kirsch", "underline": false },
-        { "name": "Larry E. Overman", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Stefan F. Kirsch",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman",
+          "underline": false
+        }
       ],
       "title": "Catalytic Asymmetric Synthesis of Chiral Allylic Esters",
       "journal": "J. Am. Chem. Soc.",
-      "year": 2010,
+      "year": "2010",
       "volume": "132",
-      "pages": "15185–15191",
+      "pages": "15185\u201315191",
       "doi": "10.1021/ja106685w",
       "doiUrl": "http://dx.doi.org/10.1021/ja106685w"
     },
     {
       "authors": [
-        { "name": "Jeffrey S. Cannon", "underline": false },
-        { "name": "Stefan F. Kirsch", "underline": false },
-        { "name": "Larry E. Overman", "underline": false },
-        { "name": "Helen F. Sneddon", "underline": false }
+        {
+          "name": "Jeffrey S. Cannon",
+          "underline": false
+        },
+        {
+          "name": "Stefan F. Kirsch",
+          "underline": false
+        },
+        {
+          "name": "Larry E. Overman",
+          "underline": false
+        },
+        {
+          "name": "Helen F. Sneddon",
+          "underline": false
+        }
       ],
       "title": "Mechanism of the Cobalt Oxazoline Palladacycle (COP)-Catalyzed Asymmetric Synthesis of Allylic Esters",
       "journal": "J. Am. Chem. Soc.",
-      "year": 2010,
+      "year": "2010",
       "volume": "132",
-      "pages": "15192–15203",
+      "pages": "15192\u201315203",
       "doi": "10.1021/ja106688j",
       "doiUrl": "http://dx.doi.org/10.1021/ja106688j"
     }

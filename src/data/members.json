@@ -4,30 +4,256 @@
   "groupPhotoUrl": "https://i0.wp.com/cannonchem.com/wp-content/uploads/2025/09/img_5452-edited.jpg?resize=1040%2C1040&ssl=1",
   "season": "Summer 2025",
   "members": [
-    { "name": "Rachel Schachter", "title": "Research Associate", "detail": "A.B. Occidental College" },
-    { "name": "Allison Bello '26", "title": "Undergraduate", "detail": "Biochemistry" },
-    { "name": "Oakley Cook '27", "title": "Undergraduate", "detail": "Biochemistry" },
-    { "name": "Madeline Fernandez '28", "title": "Undergraduate", "detail": "" },
-    { "name": "Ben Rachel Gross '27", "title": "Undergraduate", "detail": "Chemistry" },
-    { "name": "Ixchel Hernandez '27", "title": "Undergraduate", "detail": "Urban & Environmental Policy" },
-    { "name": "Kenneth Huang '26", "title": "Undergraduate", "detail": "Chemistry" },
-    { "name": "Nathan Kim '26", "title": "Undergraduate", "detail": "Biology" },
-    { "name": "Sua Kim '28", "title": "Undergraduate", "detail": "" },
-    { "name": "Kyle Share '27", "title": "Undergraduate", "detail": "Biochemistry and Kinesiology" },
-    { "name": "Ian Terell '26", "title": "Undergraduate", "detail": "Chemistry and CSLC" },
-    { "name": "Ozan Topalan '27", "title": "Undergraduate", "detail": "Biochemistry" },
-    { "name": "Jack Yurich '28", "title": "Undergraduate", "detail": "" }
+    {
+      "name": "Rachel Schachter",
+      "title": "Research Associate",
+      "detail": "A.B. Occidental College"
+    },
+    {
+      "name": "Allison Bello '26",
+      "title": "Undergraduate",
+      "detail": "Biochemistry"
+    },
+    {
+      "name": "Oakley Cook '27",
+      "title": "Undergraduate",
+      "detail": "Biochemistry"
+    },
+    {
+      "name": "Madeline Fernandez '28",
+      "title": "Undergraduate",
+      "detail": ""
+    },
+    {
+      "name": "Ben Rachel Gross '27",
+      "title": "Undergraduate",
+      "detail": "Chemistry"
+    },
+    {
+      "name": "Ixchel Hernandez '27",
+      "title": "Undergraduate",
+      "detail": "Urban & Environmental Policy"
+    },
+    {
+      "name": "Kenneth Huang '26",
+      "title": "Undergraduate",
+      "detail": "Chemistry"
+    },
+    {
+      "name": "Nathan Kim '26",
+      "title": "Undergraduate",
+      "detail": "Biology"
+    },
+    {
+      "name": "Sua Kim '28",
+      "title": "Undergraduate",
+      "detail": ""
+    },
+    {
+      "name": "Kyle Share '27",
+      "title": "Undergraduate",
+      "detail": "Biochemistry and Kinesiology"
+    },
+    {
+      "name": "Ian Terell '26",
+      "title": "Undergraduate",
+      "detail": "Chemistry and CSLC"
+    },
+    {
+      "name": "Ozan Topalan '27",
+      "title": "Undergraduate",
+      "detail": "Biochemistry"
+    },
+    {
+      "name": "Jack Yurich '28",
+      "title": "Undergraduate",
+      "detail": ""
+    }
   ],
   "alumni": [
-    "Morgan Jackson '25", "Haeyoon Kim '25", "Songhee Lee '25", "Carter Park '25",
-    "Zane Blum '24", "Chris Boeke '24", "Ciara Gillen '24", "Kiana Kea '24", "Allison Shao '24",
-    "Lucien Delgutte '23", "Chris George '23", "Gahan Lahiri '23", "Kayla Lin '23", "Rachel Zhang '23",
-    "Greg Evans '22", "Clarissa Kiyomura '22", "Claire Luethe '22", "Kian Shamskhou '22", "Max Young '22",
-    "Aerin Mellott '21", "Alex Orebic '21", "Sophia Yang '21",
-    "Kiersten Gabaldon '20", "Marc Kawada '20", "Yuri Lee '20", "Kayla Steinke '20",
-    "Joseph Costello '19", "Anne Marie Crooke '19", "Daniel Essayan '19", "Tre'Shunda James '19", "Paul Tomlinson '19",
-    "Santiago Bedoya-Gallego '18", "Molly Brown '18", "Katherine Forbes '18", "Scott Niman '18", "Matthew Schmidt '18", "Tina Zolfaghari '18",
-    "Natalie Dwulet '17", "Nicholas Foy '17", "Benjamin Sartor '17", "Trent Benedick '17", "Max Gruber '17", "Brad Kawano '17", "Isaac Wang '17",
-    "Jacob Sertich '16", "Alex Rand '15"
+    {
+      "name": "Morgan Jackson '25",
+      "description": ""
+    },
+    {
+      "name": "Haeyoon Kim '25",
+      "description": ""
+    },
+    {
+      "name": "Songhee Lee '25",
+      "description": ""
+    },
+    {
+      "name": "Carter Park '25",
+      "description": ""
+    },
+    {
+      "name": "Zane Blum '24",
+      "description": ""
+    },
+    {
+      "name": "Chris Boeke '24",
+      "description": ""
+    },
+    {
+      "name": "Ciara Gillen '24",
+      "description": ""
+    },
+    {
+      "name": "Kiana Kea '24",
+      "description": ""
+    },
+    {
+      "name": "Allison Shao '24",
+      "description": ""
+    },
+    {
+      "name": "Lucien Delgutte '23",
+      "description": ""
+    },
+    {
+      "name": "Chris George '23",
+      "description": ""
+    },
+    {
+      "name": "Gahan Lahiri '23",
+      "description": ""
+    },
+    {
+      "name": "Kayla Lin '23",
+      "description": ""
+    },
+    {
+      "name": "Rachel Zhang '23",
+      "description": ""
+    },
+    {
+      "name": "Greg Evans '22",
+      "description": ""
+    },
+    {
+      "name": "Clarissa Kiyomura '22",
+      "description": ""
+    },
+    {
+      "name": "Claire Luethe '22",
+      "description": ""
+    },
+    {
+      "name": "Kian Shamskhou '22",
+      "description": ""
+    },
+    {
+      "name": "Max Young '22",
+      "description": ""
+    },
+    {
+      "name": "Aerin Mellott '21",
+      "description": ""
+    },
+    {
+      "name": "Alex Orebic '21",
+      "description": ""
+    },
+    {
+      "name": "Sophia Yang '21",
+      "description": ""
+    },
+    {
+      "name": "Kiersten Gabaldon '20",
+      "description": ""
+    },
+    {
+      "name": "Marc Kawada '20",
+      "description": ""
+    },
+    {
+      "name": "Yuri Lee '20",
+      "description": ""
+    },
+    {
+      "name": "Kayla Steinke '20",
+      "description": ""
+    },
+    {
+      "name": "Joseph Costello '19",
+      "description": ""
+    },
+    {
+      "name": "Anne Marie Crooke '19",
+      "description": ""
+    },
+    {
+      "name": "Daniel Essayan '19",
+      "description": ""
+    },
+    {
+      "name": "Tre'Shunda James '19",
+      "description": ""
+    },
+    {
+      "name": "Paul Tomlinson '19",
+      "description": ""
+    },
+    {
+      "name": "Santiago Bedoya-Gallego '18",
+      "description": ""
+    },
+    {
+      "name": "Molly Brown '18",
+      "description": ""
+    },
+    {
+      "name": "Katherine Forbes '18",
+      "description": ""
+    },
+    {
+      "name": "Scott Niman '18",
+      "description": ""
+    },
+    {
+      "name": "Matthew Schmidt '18",
+      "description": ""
+    },
+    {
+      "name": "Tina Zolfaghari '18",
+      "description": ""
+    },
+    {
+      "name": "Natalie Dwulet '17",
+      "description": ""
+    },
+    {
+      "name": "Nicholas Foy '17",
+      "description": ""
+    },
+    {
+      "name": "Benjamin Sartor '17",
+      "description": ""
+    },
+    {
+      "name": "Trent Benedick '17",
+      "description": ""
+    },
+    {
+      "name": "Max Gruber '17",
+      "description": ""
+    },
+    {
+      "name": "Brad Kawano '17",
+      "description": ""
+    },
+    {
+      "name": "Isaac Wang '17",
+      "description": ""
+    },
+    {
+      "name": "Jacob Sertich '16",
+      "description": ""
+    },
+    {
+      "name": "Alex Rand '15",
+      "description": ""
+    }
   ]
 }
